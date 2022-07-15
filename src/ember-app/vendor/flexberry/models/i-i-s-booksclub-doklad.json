@@ -1,0 +1,177 @@
+﻿{
+  "name": "IISBooksclubDoklad",
+  "modelName": "i-i-s-booksclub-doklad",
+  "className": "Doklad",
+  "nameSpace": "IIS.Booksclub",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dataDoklada",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ocenkaKnigi",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLPrezentacii",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLVideo",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "recenziya",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "spiker",
+      "relatedTo": "i-i-s-booksclub-spiker",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "kniga",
+      "relatedTo": "i-i-s-booksclub-kniga",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "vstrechaKluba",
+      "relatedTo": "i-i-s-booksclub-vstrecha-kluba",
+      "inverse": "doklad"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "DokladE",
+      "modelName": "i-i-s-booksclub-doklad",
+      "attrs": [
+        {
+          "name": "dataDoklada",
+          "caption": "Дата доклада",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ocenkaKnigi",
+          "caption": "Оценка книги",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "uRLPrezentacii",
+          "caption": "U r l презентации",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "uRLVideo",
+          "caption": "U r l видео",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "recenziya",
+          "caption": "Рецензия",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Familiya",
+          "lookupValueField": "familiya",
+          "relationName": "Spiker",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "familiya",
+              "caption": "~",
+              "hidden": true,
+              "index": 6
+            },
+            {
+              "name": "imya",
+              "caption": "~",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "otchestvo",
+              "caption": "~",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Спикер",
+          "name": "spiker",
+          "relatedTo": "i-i-s-booksclub-spiker",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Nazvanie",
+          "lookupValueField": "nazvanie",
+          "relationName": "Kniga",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "nazvanie",
+              "caption": "~",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Книга",
+          "name": "kniga",
+          "relatedTo": "i-i-s-booksclub-kniga",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

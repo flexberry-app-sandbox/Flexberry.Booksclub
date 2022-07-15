@@ -1,0 +1,180 @@
+﻿{
+  "name": "IISBooksclubKniga",
+  "modelName": "i-i-s-booksclub-kniga",
+  "className": "Kniga",
+  "nameSpace": "IIS.Booksclub",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "nazvanie",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "avtor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "kolichestvoStranic",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLOblozhki",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLOpisaniya",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "tegi",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "srednyayaOcenka",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "KnigaE",
+      "modelName": "i-i-s-booksclub-kniga",
+      "attrs": [
+        {
+          "name": "nazvanie",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "avtor",
+          "caption": "Автор",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "kolichestvoStranic",
+          "caption": "Количество страниц",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "uRLOblozhki",
+          "caption": "U r l обложки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "uRLOpisaniya",
+          "caption": "U r l описания",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "tegi",
+          "caption": "Теги",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "srednyayaOcenka",
+          "caption": "Средняя оценка",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "KnigaL",
+      "modelName": "i-i-s-booksclub-kniga",
+      "attrs": [
+        {
+          "name": "nazvanie",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "avtor",
+          "caption": "Автор",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "kolichestvoStranic",
+          "caption": "Количество страниц",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "uRLOblozhki",
+          "caption": "U r l обложки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "uRLOpisaniya",
+          "caption": "U r l описания",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "tegi",
+          "caption": "Теги",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "srednyayaOcenka",
+          "caption": "Средняя оценка",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

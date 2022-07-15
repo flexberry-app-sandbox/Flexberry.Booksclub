@@ -1,0 +1,1 @@
+docker-compose -p booksclub up -d

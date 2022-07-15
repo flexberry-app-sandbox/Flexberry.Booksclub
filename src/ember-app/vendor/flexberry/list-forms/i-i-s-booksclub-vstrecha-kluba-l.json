@@ -1,0 +1,15 @@
+﻿{
+  "newForm": null,
+  "editForm": null,
+  "external": false,
+  "caption": "Встреча клуба",
+  "name": "IISBooksclubVstrechaKlubaL",
+  "className": "VstrechaKlubaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-booksclub-vstrecha-kluba",
+      "modelProjection": "VstrechaKlubaL"
+    }
+  ]
+}

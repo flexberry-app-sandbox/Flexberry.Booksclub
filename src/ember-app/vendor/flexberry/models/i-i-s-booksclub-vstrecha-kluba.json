@@ -1,0 +1,68 @@
+﻿{
+  "name": "IISBooksclubVstrechaKluba",
+  "modelName": "i-i-s-booksclub-vstrecha-kluba",
+  "className": "VstrechaKluba",
+  "nameSpace": "IIS.Booksclub",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dataVstrechi",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "doklad",
+      "relatedTo": "i-i-s-booksclub-doklad",
+      "inverse": "vstrechaKluba"
+    }
+  ],
+  "projections": [
+    {
+      "name": "VstrechaKlubaE",
+      "modelName": "i-i-s-booksclub-vstrecha-kluba",
+      "attrs": [
+        {
+          "name": "dataVstrechi",
+          "caption": "Дата встречи",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "DokladE",
+          "caption": "Доклад",
+          "name": "doklad",
+          "relatedTo": "i-i-s-booksclub-doklad",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "VstrechaKlubaL",
+      "modelName": "i-i-s-booksclub-vstrecha-kluba",
+      "attrs": [
+        {
+          "name": "dataVstrechi",
+          "caption": "Дата встречи",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

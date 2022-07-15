@@ -1,0 +1,97 @@
+<h3 class="ui header">{{t "forms.i-i-s-booksclub-kniga-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.nazvanie
+      class=(if (v-get validationModel "nazvanie" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.nazvanie-caption")
+      data-test-i-i-s-booksclub-kniga-e-nazvanie=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "nazvanie" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.avtor
+      class=(if (v-get validationModel "avtor" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.avtor-caption")
+      data-test-i-i-s-booksclub-kniga-e-avtor=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "avtor" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.kolichestvoStranic
+      class=(if (v-get validationModel "kolichestvoStranic" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.kolichestvoStranic-caption")
+      data-test-i-i-s-booksclub-kniga-e-kolichestvoStranic=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "kolichestvoStranic" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.uRLOblozhki
+      class=(if (v-get validationModel "uRLOblozhki" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.uRLOblozhki-caption")
+      data-test-i-i-s-booksclub-kniga-e-uRLOblozhki=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "uRLOblozhki" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.uRLOpisaniya
+      class=(if (v-get validationModel "uRLOpisaniya" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.uRLOpisaniya-caption")
+      data-test-i-i-s-booksclub-kniga-e-uRLOpisaniya=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "uRLOpisaniya" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.tegi
+      class=(if (v-get validationModel "tegi" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.tegi-caption")
+      data-test-i-i-s-booksclub-kniga-e-tegi=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "tegi" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.srednyayaOcenka
+      class=(if (v-get validationModel "srednyayaOcenka" "isInvalid") "error")
+      label=(t "forms.i-i-s-booksclub-kniga-e.srednyayaOcenka-caption")
+      data-test-i-i-s-booksclub-kniga-e-srednyayaOcenka=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "srednyayaOcenka" "message")}}
+  </div>
+</form>

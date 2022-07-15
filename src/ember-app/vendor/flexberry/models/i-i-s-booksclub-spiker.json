@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISBooksclubSpiker",
+  "modelName": "i-i-s-booksclub-spiker",
+  "className": "Spiker",
+  "nameSpace": "IIS.Booksclub",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "familiya",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "imya",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "otchestvo",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "SpikerE",
+      "modelName": "i-i-s-booksclub-spiker",
+      "attrs": [
+        {
+          "name": "familiya",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "imya",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "otchestvo",
+          "caption": "Отчество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "SpikerL",
+      "modelName": "i-i-s-booksclub-spiker",
+      "attrs": [
+        {
+          "name": "familiya",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "imya",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "otchestvo",
+          "caption": "Отчество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

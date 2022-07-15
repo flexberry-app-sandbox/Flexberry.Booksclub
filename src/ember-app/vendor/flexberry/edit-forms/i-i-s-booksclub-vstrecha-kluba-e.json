@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "spiker",
+      "displayAttributeName": "familiya",
+      "required": true,
+      "relationName": "Doklad.Spiker",
+      "projection": "SpikerL",
+      "detailModelName": "i-i-s-booksclub-doklad"
+    },
+    {
+      "master": "kniga",
+      "displayAttributeName": "nazvanie",
+      "required": true,
+      "relationName": "Doklad.Kniga",
+      "projection": "KnigaL",
+      "detailModelName": "i-i-s-booksclub-doklad"
+    }
+  ],
+  "external": false,
+  "caption": "Встреча клуба",
+  "name": "IISBooksclubVstrechaKlubaE",
+  "className": "VstrechaKlubaE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-booksclub-vstrecha-kluba",
+      "modelProjection": "VstrechaKlubaE"
+    }
+  ]
+}

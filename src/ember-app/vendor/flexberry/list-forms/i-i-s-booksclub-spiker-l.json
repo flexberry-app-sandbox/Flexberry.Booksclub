@@ -1,0 +1,15 @@
+﻿{
+  "newForm": null,
+  "editForm": null,
+  "external": false,
+  "caption": "Спикер",
+  "name": "IISBooksclubSpikerL",
+  "className": "SpikerL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-booksclub-spiker",
+      "modelProjection": "SpikerL"
+    }
+  ]
+}

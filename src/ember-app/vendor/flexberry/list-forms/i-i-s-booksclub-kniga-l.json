@@ -1,0 +1,15 @@
+﻿{
+  "newForm": null,
+  "editForm": null,
+  "external": false,
+  "caption": "Книга",
+  "name": "IISBooksclubKnigaL",
+  "className": "KnigaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-booksclub-kniga",
+      "modelProjection": "KnigaL"
+    }
+  ]
+}
